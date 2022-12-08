@@ -4,21 +4,33 @@
 }
 
 #root {
-  background-color: rgb(77, 76, 76);
+  background-color: rgb(138, 138, 138);
 }
 
 #Homepage {
   display: grid;
-  grid-template-rows: 10%;
+  grid-template-rows: 10% 10%;
   height: 100vh;
   width: 100vw;
 }
 
-#Homepage > h2 {
+#Header{
   margin: 8px;
   border: 5px solid black;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#Search{
+  margin: 8px;
+  border: 5px solid black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 200%;
 }
 
 #List {
