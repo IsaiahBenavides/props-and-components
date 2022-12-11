@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Header() {
+export default function HomepageHeader() {
     return (
         <>
             <div id="Header">
@@ -9,8 +9,6 @@ export default function Header() {
                 </h1>
             </div>
             <input type={String} id="Search">
-                {/* <p>Search Bar</p>
-                <input type={String}></input> */}
             </input>
         </>
     )

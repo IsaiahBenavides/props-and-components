@@ -1,21 +1,17 @@
 import React from 'react';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Homepage from './components/Homepage';
-import dataArr from "./data";
-import EmployeeListItem from './components/EmployeeListItem';
-
-const data = dataArr.map((ele, idx) => {
-  return (
-    <EmployeeListItem key={idx} {...ele} />
-  )
-})
+import EmployeePage from './pages/EmployeePage';
+import Homepage from './pages/Homepage';
 
 function App() {
   return (
-    <>
-      <Homepage>
-      </Homepage>
-    </>
+    <div className='App'>
+      <Routes>
+        <Route path='/' element={<Homepage />} />
+        <Route path='/employee/:name' element={<EmployeePage />} />
+      </Routes>
+    </div>
   );
 }
 
