@@ -5,7 +5,7 @@ export default function HomepageHeader() {
         <>
             <div id="Header">
                 <h1>
-                    Employee Direcotory
+                    Employee Directory
                 </h1>
             </div>
             <input type={String} id="Search">
